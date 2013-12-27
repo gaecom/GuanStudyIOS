@@ -7,21 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32F78E0186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */; };
+		D32F78E6186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */; };
+		D32F78F5186AA9F2006CB53F /* FlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78F2186AA9F2006CB53F /* FlowViewCell.m */; };
+		D32F78F6186AA9F2006CB53F /* FlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78F4186AA9F2006CB53F /* FlowViewController.m */; };
+		D32F7902186AAB79006CB53F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F7901186AAB79006CB53F /* main.m */; };
+		D32F7906186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F7904186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m */; };
+		D32F7907186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32F7905186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib */; };
+		D32F790A186AB19E006CB53F /* bryce.png in Resources */ = {isa = PBXBuildFile; fileRef = D32F7908186AB19D006CB53F /* bryce.png */; };
+		D34B9156186AE051006EE460 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34B9155186AE051006EE460 /* CoreImage.framework */; };
+		D34B9159186AE21B006EE460 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = D34B9158186AE21B006EE460 /* UIImage+Resize.m */; };
+		D350D431186BCAA6009B5B87 /* DemoCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D430186BCAA6009B5B87 /* DemoCodeViewController.m */; };
+		D350D434186BCCF3009B5B87 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D433186BCCF3009B5B87 /* BaseViewController.m */; };
+		D35149E2186C0BA7008A63E7 /* Core Image.html in Resources */ = {isa = PBXBuildFile; fileRef = D35149E1186C0BA7008A63E7 /* Core Image.html */; };
+		D35149E4186C1220008A63E7 /* sampleMaskPng.png in Resources */ = {isa = PBXBuildFile; fileRef = D35149E3186C1220008A63E7 /* sampleMaskPng.png */; };
+		D35149E6186C13A2008A63E7 /* CoreImage_ios5.png in Resources */ = {isa = PBXBuildFile; fileRef = D35149E5186C13A2008A63E7 /* CoreImage_ios5.png */; };
 		D37E4781186978EF008D7FDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37E4780186978EF008D7FDC /* Foundation.framework */; };
 		D37E4783186978EF008D7FDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37E4782186978EF008D7FDC /* CoreGraphics.framework */; };
 		D37E4785186978EF008D7FDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37E4784186978EF008D7FDC /* UIKit.framework */; };
 		D37E478B186978EF008D7FDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D37E4789186978EF008D7FDC /* InfoPlist.strings */; };
-		D37E478D186978EF008D7FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D37E478C186978EF008D7FDC /* main.m */; };
 		D37E4791186978EF008D7FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D37E4790186978EF008D7FDC /* AppDelegate.m */; };
 		D37E4794186978EF008D7FDC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37E4792186978EF008D7FDC /* Main_iPhone.storyboard */; };
 		D37E4797186978EF008D7FDC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37E4795186978EF008D7FDC /* Main_iPad.storyboard */; };
-		D37E479A186978EF008D7FDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37E4799186978EF008D7FDC /* ViewController.m */; };
 		D37E479C186978EF008D7FDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37E479B186978EF008D7FDC /* Images.xcassets */; };
 		D37E47A3186978EF008D7FDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37E47A2186978EF008D7FDC /* XCTest.framework */; };
 		D37E47A4186978EF008D7FDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37E4780186978EF008D7FDC /* Foundation.framework */; };
 		D37E47A5186978EF008D7FDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37E4784186978EF008D7FDC /* UIKit.framework */; };
 		D37E47AD186978EF008D7FDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D37E47AB186978EF008D7FDC /* InfoPlist.strings */; };
 		D37E47AF186978EF008D7FDC /* GuanStudyIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37E47AE186978EF008D7FDC /* GuanStudyIOSTests.m */; };
+		D37E47BD18697AED008D7FDC /* Main_iPhoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37E47BC18697AED008D7FDC /* Main_iPhoneTableViewController.m */; };
+		D37E47C218697C07008D7FDC /* Main_iPhoneTableViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = D37E47C118697C07008D7FDC /* Main_iPhoneTableViewController.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,26 +50,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iOS5_by_Tutorials.storyboard; sourceTree = "<group>"; };
+		D32F78E4186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS5_by_TutorialsTableViewController.h; sourceTree = "<group>"; };
+		D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS5_by_TutorialsTableViewController.m; sourceTree = "<group>"; };
+		D32F78F0186AA9F2006CB53F /* DefineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineViewController.h; sourceTree = "<group>"; };
+		D32F78F1186AA9F2006CB53F /* FlowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowViewCell.h; sourceTree = "<group>"; };
+		D32F78F2186AA9F2006CB53F /* FlowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowViewCell.m; sourceTree = "<group>"; };
+		D32F78F3186AA9F2006CB53F /* FlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowViewController.h; sourceTree = "<group>"; };
+		D32F78F4186AA9F2006CB53F /* FlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowViewController.m; sourceTree = "<group>"; };
+		D32F7900186AAB51006CB53F /* GuanStudyIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GuanStudyIOS-Prefix.pch"; sourceTree = "<group>"; };
+		D32F7901186AAB79006CB53F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D32F7903186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImage_ios5TutorialsViewController.h; sourceTree = "<group>"; };
+		D32F7904186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImage_ios5TutorialsViewController.m; sourceTree = "<group>"; };
+		D32F7905186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreImage_ios5TutorialsViewController.xib; sourceTree = "<group>"; };
+		D32F7908186AB19D006CB53F /* bryce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bryce.png; sourceTree = "<group>"; };
+		D34B9155186AE051006EE460 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D34B9157186AE21B006EE460 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		D34B9158186AE21B006EE460 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		D350D42F186BCAA6009B5B87 /* DemoCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCodeViewController.h; sourceTree = "<group>"; };
+		D350D430186BCAA6009B5B87 /* DemoCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCodeViewController.m; sourceTree = "<group>"; };
+		D350D432186BCCF3009B5B87 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D350D433186BCCF3009B5B87 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D35149E1186C0BA7008A63E7 /* Core Image.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Core Image.html"; sourceTree = "<group>"; };
+		D35149E3186C1220008A63E7 /* sampleMaskPng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleMaskPng.png; sourceTree = "<group>"; };
+		D35149E5186C13A2008A63E7 /* CoreImage_ios5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoreImage_ios5.png; sourceTree = "<group>"; };
 		D37E477D186978EF008D7FDC /* GuanStudyIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuanStudyIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37E4780186978EF008D7FDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D37E4782186978EF008D7FDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D37E4784186978EF008D7FDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D37E4788186978EF008D7FDC /* GuanStudyIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuanStudyIOS-Info.plist"; sourceTree = "<group>"; };
 		D37E478A186978EF008D7FDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D37E478C186978EF008D7FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D37E478E186978EF008D7FDC /* GuanStudyIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuanStudyIOS-Prefix.pch"; sourceTree = "<group>"; };
 		D37E478F186978EF008D7FDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D37E4790186978EF008D7FDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D37E4793186978EF008D7FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		D37E4796186978EF008D7FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		D37E4798186978EF008D7FDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D37E4799186978EF008D7FDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D37E479B186978EF008D7FDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D37E47A1186978EF008D7FDC /* GuanStudyIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuanStudyIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37E47A2186978EF008D7FDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D37E47AA186978EF008D7FDC /* GuanStudyIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuanStudyIOSTests-Info.plist"; sourceTree = "<group>"; };
 		D37E47AC186978EF008D7FDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D37E47AE186978EF008D7FDC /* GuanStudyIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuanStudyIOSTests.m; sourceTree = "<group>"; };
+		D37E47BB18697AED008D7FDC /* Main_iPhoneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_iPhoneTableViewController.h; sourceTree = "<group>"; };
+		D37E47BC18697AED008D7FDC /* Main_iPhoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_iPhoneTableViewController.m; sourceTree = "<group>"; };
+		D37E47C118697C07008D7FDC /* Main_iPhoneTableViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main_iPhoneTableViewController.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34B9156186AE051006EE460 /* CoreImage.framework in Frameworks */,
 				D37E4783186978EF008D7FDC /* CoreGraphics.framework in Frameworks */,
 				D37E4785186978EF008D7FDC /* UIKit.framework in Frameworks */,
 				D37E4781186978EF008D7FDC /* Foundation.framework in Frameworks */,
@@ -81,10 +119,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D32F78D9186A7D54006CB53F /* pdfStudy */ = {
+			isa = PBXGroup;
+			children = (
+				D32F78DA186A7D54006CB53F /* iOS5_by_Tutorials_Storyboard */,
+				D32F78DB186A7D54006CB53F /* iOS6_by_Tutorials_Storyboard */,
+				D32F78DC186A7D54006CB53F /* iOS7_by_Tutorials_Storyboard */,
+			);
+			path = pdfStudy;
+			sourceTree = "<group>";
+		};
+		D32F78DA186A7D54006CB53F /* iOS5_by_Tutorials_Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */,
+				D32F78E4186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.h */,
+				D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */,
+			);
+			path = iOS5_by_Tutorials_Storyboard;
+			sourceTree = "<group>";
+		};
+		D32F78DB186A7D54006CB53F /* iOS6_by_Tutorials_Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS6_by_Tutorials_Storyboard;
+			sourceTree = "<group>";
+		};
+		D32F78DC186A7D54006CB53F /* iOS7_by_Tutorials_Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS7_by_Tutorials_Storyboard;
+			sourceTree = "<group>";
+		};
+		D32F78EF186AA9F2006CB53F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D350D432186BCCF3009B5B87 /* BaseViewController.h */,
+				D350D433186BCCF3009B5B87 /* BaseViewController.m */,
+				D350D42F186BCAA6009B5B87 /* DemoCodeViewController.h */,
+				D350D430186BCAA6009B5B87 /* DemoCodeViewController.m */,
+				D32F78F0186AA9F2006CB53F /* DefineViewController.h */,
+				D32F78F1186AA9F2006CB53F /* FlowViewCell.h */,
+				D32F78F2186AA9F2006CB53F /* FlowViewCell.m */,
+				D32F78F3186AA9F2006CB53F /* FlowViewController.h */,
+				D32F78F4186AA9F2006CB53F /* FlowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D32F78F7186AAA81006CB53F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D32F78F8186AAA81006CB53F /* IOS5_by_Tutorials */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		D32F78F8186AAA81006CB53F /* IOS5_by_Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				D32F78F9186AAA81006CB53F /* Core Image */,
+			);
+			path = IOS5_by_Tutorials;
+			sourceTree = "<group>";
+		};
+		D32F78F9186AAA81006CB53F /* Core Image */ = {
+			isa = PBXGroup;
+			children = (
+				D35149E5186C13A2008A63E7 /* CoreImage_ios5.png */,
+				D35149E3186C1220008A63E7 /* sampleMaskPng.png */,
+				D35149E1186C0BA7008A63E7 /* Core Image.html */,
+				D34B9157186AE21B006EE460 /* UIImage+Resize.h */,
+				D34B9158186AE21B006EE460 /* UIImage+Resize.m */,
+				D32F7908186AB19D006CB53F /* bryce.png */,
+				D32F7903186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.h */,
+				D32F7904186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m */,
+				D32F7905186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib */,
+			);
+			path = "Core Image";
+			sourceTree = "<group>";
+		};
 		D37E4774186978EF008D7FDC = {
 			isa = PBXGroup;
 			children = (
 				D37E4786186978EF008D7FDC /* GuanStudyIOS */,
+				D32F78D9186A7D54006CB53F /* pdfStudy */,
 				D37E47A8186978EF008D7FDC /* GuanStudyIOSTests */,
 				D37E477F186978EF008D7FDC /* Frameworks */,
 				D37E477E186978EF008D7FDC /* Products */,
@@ -103,6 +224,7 @@
 		D37E477F186978EF008D7FDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D34B9155186AE051006EE460 /* CoreImage.framework */,
 				D37E4780186978EF008D7FDC /* Foundation.framework */,
 				D37E4782186978EF008D7FDC /* CoreGraphics.framework */,
 				D37E4784186978EF008D7FDC /* UIKit.framework */,
@@ -114,12 +236,15 @@
 		D37E4786186978EF008D7FDC /* GuanStudyIOS */ = {
 			isa = PBXGroup;
 			children = (
+				D32F78F7186AAA81006CB53F /* Demo */,
+				D32F78EF186AA9F2006CB53F /* Controller */,
+				D37E47BE18697BE3008D7FDC /* plist */,
 				D37E478F186978EF008D7FDC /* AppDelegate.h */,
 				D37E4790186978EF008D7FDC /* AppDelegate.m */,
 				D37E4792186978EF008D7FDC /* Main_iPhone.storyboard */,
 				D37E4795186978EF008D7FDC /* Main_iPad.storyboard */,
-				D37E4798186978EF008D7FDC /* ViewController.h */,
-				D37E4799186978EF008D7FDC /* ViewController.m */,
+				D37E47BB18697AED008D7FDC /* Main_iPhoneTableViewController.h */,
+				D37E47BC18697AED008D7FDC /* Main_iPhoneTableViewController.m */,
 				D37E479B186978EF008D7FDC /* Images.xcassets */,
 				D37E4787186978EF008D7FDC /* Supporting Files */,
 			);
@@ -129,10 +254,9 @@
 		D37E4787186978EF008D7FDC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D37E4788186978EF008D7FDC /* GuanStudyIOS-Info.plist */,
+				D32F7901186AAB79006CB53F /* main.m */,
+				D32F7900186AAB51006CB53F /* GuanStudyIOS-Prefix.pch */,
 				D37E4789186978EF008D7FDC /* InfoPlist.strings */,
-				D37E478C186978EF008D7FDC /* main.m */,
-				D37E478E186978EF008D7FDC /* GuanStudyIOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +277,14 @@
 				D37E47AB186978EF008D7FDC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D37E47BE18697BE3008D7FDC /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				D37E47C118697C07008D7FDC /* Main_iPhoneTableViewController.plist */,
+			);
+			path = plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +363,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37E47C218697C07008D7FDC /* Main_iPhoneTableViewController.plist in Resources */,
+				D32F78E0186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard in Resources */,
+				D32F790A186AB19E006CB53F /* bryce.png in Resources */,
+				D35149E2186C0BA7008A63E7 /* Core Image.html in Resources */,
+				D35149E6186C13A2008A63E7 /* CoreImage_ios5.png in Resources */,
 				D37E4797186978EF008D7FDC /* Main_iPad.storyboard in Resources */,
+				D32F7907186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib in Resources */,
 				D37E479C186978EF008D7FDC /* Images.xcassets in Resources */,
 				D37E4794186978EF008D7FDC /* Main_iPhone.storyboard in Resources */,
 				D37E478B186978EF008D7FDC /* InfoPlist.strings in Resources */,
+				D35149E4186C1220008A63E7 /* sampleMaskPng.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +392,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37E479A186978EF008D7FDC /* ViewController.m in Sources */,
+				D32F78E6186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m in Sources */,
+				D350D434186BCCF3009B5B87 /* BaseViewController.m in Sources */,
+				D34B9159186AE21B006EE460 /* UIImage+Resize.m in Sources */,
 				D37E4791186978EF008D7FDC /* AppDelegate.m in Sources */,
-				D37E478D186978EF008D7FDC /* main.m in Sources */,
+				D32F78F6186AA9F2006CB53F /* FlowViewController.m in Sources */,
+				D32F78F5186AA9F2006CB53F /* FlowViewCell.m in Sources */,
+				D32F7902186AAB79006CB53F /* main.m in Sources */,
+				D350D431186BCAA6009B5B87 /* DemoCodeViewController.m in Sources */,
+				D37E47BD18697AED008D7FDC /* Main_iPhoneTableViewController.m in Sources */,
+				D32F7906186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +541,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuanStudyIOS/GuanStudyIOS-Prefix.pch";
 				INFOPLIST_FILE = "GuanStudyIOS/GuanStudyIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +555,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuanStudyIOS/GuanStudyIOS-Prefix.pch";
 				INFOPLIST_FILE = "GuanStudyIOS/GuanStudyIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +622,7 @@
 				D37E47B4186978EF008D7FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D37E47B5186978EF008D7FDC /* Build configuration list for PBXNativeTarget "GuanStudyIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +631,7 @@
 				D37E47B7186978EF008D7FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

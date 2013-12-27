@@ -1,0 +1,109 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1187.34">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #d12f1b}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #008400}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #703daa}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px STSong; color: #008400}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #3d1d81}
+    span.s1 {color: #78492a}
+    span.s2 {font: 14.0px STSong}
+    span.s3 {color: #000000}
+    span.s4 {color: #3d1d81}
+    span.s5 {font: 14.0px Menlo}
+    span.s6 {color: #703daa}
+    span.s7 {color: #d12f1b}
+    span.s8 {color: #bb2ca2}
+  </style>
+</head>
+<body>
+<p class="p2">// <span class="s2">获取图片</span></p>
+<p class="p3">NSString *filePath =
+[[NSBundle mainBundle] pathForResource:@"image" ofType:@"png"];</p>
+<p class="p3">NSURL *fileNameAndPath = [NSURL fileURLWithPath:filePath];</p></body>
+<p class="p2">// <span class="s2">创建一个 CIImage 对象</span></p>
+<p class="p3">CIImage *beginImage =
+[CIImage imageWithContentsOfURL:fileNameAndPath];</p>
+<p class="p2">// <span class="s2s">创建一个 CIContext(一个 CIContext 可以基于 CPU 或者 GPU)</span></span></p>
+<p class="p3">CIContext *context = [CIContext contextWithOptions:nil];</p>
+<p class="p2">// <span class="s2">创建一个滤镜(当你创建一个滤镜,在它上面配置一些属性值,这些属性值依赖于你所创建的滤镜是哪
+样的)</span></span></p>
+<p class="p3">CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues: kCIInputImageKey, beginImage, @"inputIntensity", [NSNumber numberWithFloat:0.8], nil];</p>
+<p class="p2">// <span class="s2">获取滤镜输出</span></span></p>
+<p class="p3">CIImage *outputImage = [filter outputImage];</p>
+<p class="p3">CGImageRef cgimg =
+[context createCGImage:outputImage fromRect:[outputImage extent]];</p>
+<p class="p3">UIImage *newImg = [UIImage imageWithCGImage:cgimg];</p>
+<p class="p3">[imgV setImage:newImg];</p>
+<p class="p3">CGImageRelease(cgimg);</p>
+
+<p class="p2">// </p><br><br>
+<p class="p2">// <span class="s2">修改滤镜值</span></p>
+<p class="p3">-(IBAction)changeValue:(UISlider *)sender {</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp float slideValue = [sender value];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp [filter setValue:[NSNumber numberWithFloat:slideValue] forKey:@"inputIntensity"];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CIImage *outputImage = [filter outputImage];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CGImageRef cgimg = [context createCGImage:outputImage
+fromRect:[outputImage extent]];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp UIImage *newImg = [UIImage imageWithCGImage:cgimg];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp [imgV setImage:newImg];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CGImageRelease(cgimg);</p>
+<p class="p3">&nbsp }</p>
+
+<p class="p2">// </p><br><br>
+<p class="p2">// <span class="s2">混合滤镜</span></p>
+<p class="p3">- (IBAction)maskMode:(id)sender {</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CIImage *maskImage = [CIImage imageWithCGImage:[UIImage
+imageNamed:@"sampleMaskPng.png"].CGImage];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CIFilter *maskFilter = [CIFilter filterWithName:@"CISource
+AtopCompositing" keysAndValues:kCIInputImageKey, beginImage,
+@"inputBackgroundImage", maskImage, nil];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CGImageRef cgImg = [context createCGImage:maskFilter.outputImage
+fromRect:[maskFilter.outputImage extent]];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CGImageRef cgimg = [context createCGImage:outputImage
+fromRect:[outputImage extent]];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp [imgV setImage:[UIImage imageWithCGImage:cgImg]];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CGImageRelease(cgImg);</p>
+<p class="p3">&nbsp }</p>
+
+<p class="p2">// </p><br><br>
+<p class="p2">// <span class="s2">把一个经过滤镜处理的图像和另外一张混合</span></p>
+<p class="p3">-(CIImage *)addBackgroundLayer:(CIImage *)inputImage {</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CIImage *bg = [CIImage imageWithCGImage:[UIImage
+imageNamed:@"bryce.png"].CGImage];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CIFilter *sourceOver = [CIFilter filterWithName:@"CISource
+OverCompositing" keysAndValues:kCIInputImageKey, inputImage,
+@"inputBackgroundImage", bg, nil];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp return sourceOver.outputImage;</p>
+<p class="p3">&nbsp }</p>
+
+<p class="p2">// </p><br><br>
+<p class="p2">// <span class="s2">其他的滤镜</span></p>
+<p class="p3">CIFilter *filt = [filtersArray objectAtIndex:indx];</p>
+<p class="p3">CGImageRef imgRef = [context createCGImage:[filt outputImage]
+fromRect:[[filt outputImage] extent]];</p>
+<p class="p3">[imgV setImage:[UIImage imageWithCGImage:imgRef]];</p>
+
+<p class="p2">// </p><br><br>
+<p class="p2">// <span class="s2"> 自动增强</span></p>
+<p class="p3">- (IBAction)autoEnhance:(id)sender { {</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp CIImage *outputImage = beginImage;
+NSArray *ar = [beginImage autoAdjustmentFilters];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp for (CIFilter *fil in ar) {</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp&nbsp [fil setValue:outputImage forKey:kCIInputImageKey];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp&nbsp outputImage = fil.outputImage;</p>
+<p class="p3"> @"CIAttributeFilterDisplayName"]);</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp }</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp&nbsp [filter setValue:outputImage forKey:kCIInputImageKey];</p>
+<p class="p3">&nbsp&nbsp&nbsp&nbsp&nbsp [self changeValue:amountSlider];</p>
+
+<p class="p3">&nbsp }</p>
+
+</body>
+</html>

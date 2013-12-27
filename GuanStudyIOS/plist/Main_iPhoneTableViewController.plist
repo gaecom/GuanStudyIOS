@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>iOS5_by_Tutorials.pdf</string>
+		<key>type</key>
+		<string>pdfStudy</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>width</key>
+				<integer>320</integer>
+				<key>height</key>
+				<integer>213</integer>
+				<key>uuid</key>
+				<string>Core Image</string>
+				<key>image</key>
+				<string>CoreImage_ios5.png</string>
+				<key>title</key>
+				<string>Core Image</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>iOS6_by_Tutorials.pdf</string>
+		<key>type</key>
+		<string>pdfStudy</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>iOS7_by_Tutorials.pdf</string>
+		<key>type</key>
+		<string>pdfStudy</string>
+	</dict>
+</array>
+</plist>
