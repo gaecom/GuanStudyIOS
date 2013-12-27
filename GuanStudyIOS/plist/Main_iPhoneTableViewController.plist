@@ -20,6 +20,8 @@
 				<string>CoreImage_ios5.png</string>
 				<key>title</key>
 				<string>Core Image</string>
+				<key>introduction</key>
+				<string>CoreImageIntroduction</string>
 			</dict>
 		</array>
 	</dict>

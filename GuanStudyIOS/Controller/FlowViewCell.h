@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *flowAddButton;
 @property (strong, nonatomic) IBOutlet UIButton *flowCommentButton;
 @property (strong, nonatomic) NSString *demoUUID;
+@property (strong, nonatomic) NSString *demoIntroduction;
 @property (assign, nonatomic) id <FlowViewCellDelegate> flowViewCellDelegate;
 
 + (CGFloat)heightForCell:(NSDictionary *)dic;
@@ -36,6 +37,6 @@
 
 @protocol FlowViewCellDelegate <NSObject>
 
-- (void)flowViewCell:(FlowViewCell *)cell startDemo:(NSString *)demoUUID;
+- (void)flowViewCell:(FlowViewCell *)cell startDemo:(NSString *)demoUUID Introduction:(NSString *)introduction;
 
 @end

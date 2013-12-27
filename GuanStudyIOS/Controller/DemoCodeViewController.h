@@ -12,5 +12,5 @@
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (copy, nonatomic) NSString *uuid;
-
+@property (copy, nonatomic) NSString *Introduction;
 @end

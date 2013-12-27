@@ -9,6 +9,10 @@
 #import "DemoCodeViewController.h"
 
 @interface DemoCodeViewController ()
+{
+    NSString *path_uuid;
+    NSString *path_Introduction;
+}
 
 @end
 
@@ -28,9 +32,15 @@
     [super viewDidLoad];
     
     self.webView.delegate = self;
-    NSString *path = [[NSBundle mainBundle] pathForResource:self.uuid ofType:@"html"];
-    if (path) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath: path]]];
+    path_uuid = [[NSBundle mainBundle] pathForResource:self.uuid ofType:@"html"];
+    path_Introduction = [[NSBundle mainBundle]pathForResource:self.Introduction ofType:@"html"];
+    if (path_uuid) {
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath: path_uuid]]];
+    }
+    
+    if ((![self.Introduction isEqualToString:@""])&&(self.Introduction)) {
+        UIBarButtonItem *RightBarButton = [[UIBarButtonItem alloc]initWithTitle:@"简介" style:UIBarButtonItemStyleBordered target:self action:@selector(RightBarButtonAction:)];
+        self.navigationItem.rightBarButtonItem = RightBarButton;
     }
 }
 
@@ -51,6 +61,21 @@
         return ![[UIApplication sharedApplication] openURL:requestURL];
     }
     return YES;
+}
+
+- (IBAction)RightBarButtonAction:(UIBarButtonItem *)sender {
+    if ([sender.title isEqualToString:@"简介"]) {
+        [sender setTitle:@"代码"];
+        if (path_Introduction) {
+            [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath: path_Introduction]]];
+        }
+    }else{
+        [sender setTitle:@"简介"];
+        if (path_uuid) {
+            [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath: path_uuid]]];
+        }
+
+    }
 }
 
 @end

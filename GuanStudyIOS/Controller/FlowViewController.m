@@ -54,7 +54,6 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-     CGFloat width = [[self.items[indexPath.row] objectForKey:@"width"] floatValue];
     return [FlowViewCell heightForCell:self.items[indexPath.row]];
 }
 
@@ -78,8 +77,8 @@
 }
 
 #pragma mark - FlowViewCellDelegate
-- (void)flowViewCell:(FlowViewCell *)cell startDemo:(NSString *)demoUUID {
-    UIViewController *VC = nil;
+- (void)flowViewCell:(FlowViewCell *)cell startDemo:(NSString *)demoUUID Introduction:(NSString *)introduction{
+    BaseViewController *VC = nil;
     BOOL isAnimate = YES;
     if ([demoUUID isEqualToString:@"Core Image"]) {
         VC = [[CoreImage_ios5TutorialsViewController alloc]initWithNibName:@"CoreImage_ios5TutorialsViewController" bundle:nil];
@@ -88,6 +87,7 @@
     if (VC) {
         if ([[[[UIDevice currentDevice] systemVersion] substringToIndex:1] intValue] >= 6) {
             VC.title = demoUUID;
+            VC.Introduction = introduction;
             [self.navigationController pushViewController:VC animated:isAnimate];
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"这是iOS6的新特性" message:@"请升级到iOS6" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];

@@ -41,6 +41,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     DemoCodeViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"DemoCodeViewController"];
     controller.uuid = self.title;
+    controller.Introduction = self.Introduction;
     [self.navigationController pushViewController:controller animated:YES];
 }
 

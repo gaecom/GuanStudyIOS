@@ -15,6 +15,7 @@
 		D32F7906186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F7904186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m */; };
 		D32F7907186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32F7905186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib */; };
 		D32F790A186AB19E006CB53F /* bryce.png in Resources */ = {isa = PBXBuildFile; fileRef = D32F7908186AB19D006CB53F /* bryce.png */; };
+		D3396806186D29E8003BAF9C /* CoreImageIntroduction.html in Resources */ = {isa = PBXBuildFile; fileRef = D3396805186D29E8003BAF9C /* CoreImageIntroduction.html */; };
 		D34B9156186AE051006EE460 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34B9155186AE051006EE460 /* CoreImage.framework */; };
 		D34B9159186AE21B006EE460 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = D34B9158186AE21B006EE460 /* UIImage+Resize.m */; };
 		D350D431186BCAA6009B5B87 /* DemoCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D430186BCAA6009B5B87 /* DemoCodeViewController.m */; };
@@ -64,6 +65,7 @@
 		D32F7904186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImage_ios5TutorialsViewController.m; sourceTree = "<group>"; };
 		D32F7905186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreImage_ios5TutorialsViewController.xib; sourceTree = "<group>"; };
 		D32F7908186AB19D006CB53F /* bryce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bryce.png; sourceTree = "<group>"; };
+		D3396805186D29E8003BAF9C /* CoreImageIntroduction.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CoreImageIntroduction.html; sourceTree = "<group>"; };
 		D34B9155186AE051006EE460 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D34B9157186AE21B006EE460 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		D34B9158186AE21B006EE460 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		D32F78F7186AAA81006CB53F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D3396807186D4225003BAF9C /* IOS6_by_Tutorials */,
 				D32F78F8186AAA81006CB53F /* IOS5_by_Tutorials */,
 			);
 			path = Demo;
@@ -188,6 +191,7 @@
 		D32F78F9186AAA81006CB53F /* Core Image */ = {
 			isa = PBXGroup;
 			children = (
+				D3396805186D29E8003BAF9C /* CoreImageIntroduction.html */,
 				D35149E5186C13A2008A63E7 /* CoreImage_ios5.png */,
 				D35149E3186C1220008A63E7 /* sampleMaskPng.png */,
 				D35149E1186C0BA7008A63E7 /* Core Image.html */,
@@ -199,6 +203,21 @@
 				D32F7905186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.xib */,
 			);
 			path = "Core Image";
+			sourceTree = "<group>";
+		};
+		D3396807186D4225003BAF9C /* IOS6_by_Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				D3396808186D4225003BAF9C /* Core ImageIOS6 */,
+			);
+			path = IOS6_by_Tutorials;
+			sourceTree = "<group>";
+		};
+		D3396808186D4225003BAF9C /* Core ImageIOS6 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Core ImageIOS6";
 			sourceTree = "<group>";
 		};
 		D37E4774186978EF008D7FDC = {
@@ -366,6 +385,7 @@
 				D37E47C218697C07008D7FDC /* Main_iPhoneTableViewController.plist in Resources */,
 				D32F78E0186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard in Resources */,
 				D32F790A186AB19E006CB53F /* bryce.png in Resources */,
+				D3396806186D29E8003BAF9C /* CoreImageIntroduction.html in Resources */,
 				D35149E2186C0BA7008A63E7 /* Core Image.html in Resources */,
 				D35149E6186C13A2008A63E7 /* CoreImage_ios5.png in Resources */,
 				D37E4797186978EF008D7FDC /* Main_iPad.storyboard in Resources */,

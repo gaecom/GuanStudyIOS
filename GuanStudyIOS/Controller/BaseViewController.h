@@ -12,5 +12,6 @@
 @interface BaseViewController : UIViewController
 
 @property (strong, nonatomic) NSString *uuid;
+@property (strong, nonatomic) NSString *Introduction;
 
 @end

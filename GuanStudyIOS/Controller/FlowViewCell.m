@@ -55,10 +55,12 @@
     
     NSString *title = [dic objectForKey:@"title"];
     NSString *uuid = [dic objectForKey:@"uuid"];
+    NSString *introduction = [dic objectForKey:@"introduction"];
     NSString *imageName = [dic objectForKey:@"image"];
     title = NSLocalizedString(title, nil);
     
     self.demoUUID = uuid;
+    self.demoIntroduction = introduction;
     
     [self.flowTitleLabel setText:title];
     
@@ -83,7 +85,7 @@
 }
 
 - (void)startTheDemo {
-    [self.flowViewCellDelegate flowViewCell:self startDemo:self.demoUUID];
+    [self.flowViewCellDelegate flowViewCell:self startDemo:self.demoUUID Introduction:self.demoIntroduction];
 }
 
 @end

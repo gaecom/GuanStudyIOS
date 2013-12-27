@@ -11,6 +11,7 @@
 #import "UIImage+Resize.h"
 
 @interface CoreImage_ios5TutorialsViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *ScrollView;
 
 @end
 
@@ -52,6 +53,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.ScrollView setContentSize:CGSizeMake(320, 500)];
+    self.ScrollView.scrollEnabled = YES;
+    self.ScrollView.showsHorizontalScrollIndicator = YES;
+    self.ScrollView.showsVerticalScrollIndicator = YES;
+    self.ScrollView.pagingEnabled = YES;
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"image" ofType:@"png"];
     NSURL *fileNameAndPath = [NSURL fileURLWithPath:filePath];
