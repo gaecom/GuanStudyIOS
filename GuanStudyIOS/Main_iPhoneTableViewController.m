@@ -67,7 +67,6 @@
     
     NSDictionary *dic = self.items_All[indexPath.row];
     cell.textLabel.text = dic[@"name"];
-    cell.imageView.image = [UIImage imageNamed:dic[@"type"]];
     return cell;
 }
 

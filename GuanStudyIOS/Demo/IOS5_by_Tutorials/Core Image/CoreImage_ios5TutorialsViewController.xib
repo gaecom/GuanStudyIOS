@@ -19,22 +19,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qu-T8-5hm">
-                    <rect key="frame" x="0.0" y="52" width="320" height="428"/>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qu-T8-5hm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="481"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4T-Dn-gJn">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4T-Dn-gJn">
                             <rect key="frame" x="0.0" y="13" width="320" height="239"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         </imageView>
-                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ISe-y3-qWW">
+                        <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ISe-y3-qWW">
                             <rect key="frame" x="20" y="270" width="168" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <connections>
                                 <action selector="changeValue:" destination="-1" eventType="valueChanged" id="cZ3-Fq-k1p"/>
                             </connections>
                         </slider>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdZ-8n-pDi">
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdZ-8n-pDi">
                             <rect key="frame" x="203" y="272" width="102" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Photos">
@@ -44,7 +44,7 @@
                                 <action selector="loadPhoto:" destination="-1" eventType="touchUpInside" id="UHZ-sR-AUE"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-Vw-him">
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-Vw-him">
                             <rect key="frame" x="203" y="310" width="102" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -55,7 +55,7 @@
                                 <action selector="savePhoto:" destination="-1" eventType="touchUpInside" id="xOd-QR-bLg"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48W-Np-CoM">
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48W-Np-CoM">
                             <rect key="frame" x="208" y="355" width="102" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -66,7 +66,7 @@
                                 <action selector="autoEnhance:" destination="-1" eventType="touchUpInside" id="1oR-vE-nYd"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFI-cd-c32">
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFI-cd-c32">
                             <rect key="frame" x="34" y="310" width="134" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -77,7 +77,7 @@
                                 <action selector="maskMode:" destination="-1" eventType="touchUpInside" id="qXP-yu-9Tr"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXQ-id-rfd">
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXQ-id-rfd">
                             <rect key="frame" x="49" y="354" width="102" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -89,10 +89,26 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.076593986279999998" green="0.43020013930000001" blue="0.70356345659999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.87880660079999995" green="0.87880660079999995" blue="0.87880660079999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Afc-Vw-him" secondAttribute="trailing" constant="15" id="9pK-Y7-Rk8"/>
+                        <constraint firstAttribute="trailing" secondItem="o4T-Dn-gJn" secondAttribute="trailing" id="Bzl-an-jpD"/>
+                        <constraint firstAttribute="centerX" secondItem="o4T-Dn-gJn" secondAttribute="centerX" id="Cgf-bx-zj4"/>
+                        <constraint firstItem="vXQ-id-rfd" firstAttribute="leading" secondItem="7qu-T8-5hm" secondAttribute="leading" constant="49" id="M4L-Yt-GnM"/>
+                        <constraint firstAttribute="trailing" secondItem="48W-Np-CoM" secondAttribute="trailing" constant="10" id="OWk-Iw-j05"/>
+                        <constraint firstAttribute="trailing" secondItem="ISe-y3-qWW" secondAttribute="trailing" constant="134" id="PNs-SX-8ZH"/>
+                        <constraint firstAttribute="trailing" secondItem="gdZ-8n-pDi" secondAttribute="trailing" constant="15" id="ceG-rN-FCj"/>
+                        <constraint firstItem="ISe-y3-qWW" firstAttribute="leading" secondItem="7qu-T8-5hm" secondAttribute="leading" constant="22" id="ezX-QQ-vkX"/>
+                        <constraint firstItem="o4T-Dn-gJn" firstAttribute="leading" secondItem="7qu-T8-5hm" secondAttribute="leading" id="pGT-bq-ICO"/>
+                        <constraint firstItem="RFI-cd-c32" firstAttribute="leading" secondItem="7qu-T8-5hm" secondAttribute="leading" constant="34" id="zbN-lg-NYx"/>
+                    </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7qu-T8-5hm" secondAttribute="trailing" id="1KG-g2-LNl"/>
+                <constraint firstItem="7qu-T8-5hm" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="zVK-Pz-KPe"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>

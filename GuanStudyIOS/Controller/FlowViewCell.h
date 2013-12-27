@@ -16,7 +16,7 @@
 
 @property (strong, nonatomic) IBOutlet UIView *topView;
 @property (strong, nonatomic) IBOutlet UIImageView *flowImageView;
-@property (strong, nonatomic) IBOutlet UILabel *flowTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *flowTitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *flowFromLabel;
 @property (strong, nonatomic) IBOutlet UIButton *flowFancyButton;
 @property (strong, nonatomic) IBOutlet UIButton *flowAddButton;

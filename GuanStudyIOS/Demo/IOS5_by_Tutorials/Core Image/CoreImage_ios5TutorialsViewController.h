@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface CoreImage_ios5TutorialsViewController : BaseViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface CoreImage_ios5TutorialsViewController : BaseViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgV;
 - (IBAction)changeValue:(UISlider *)sender;

@@ -49,15 +49,26 @@
     }
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.ScrollView setContentSize:CGSizeMake(self.ScrollView.frame.size.width, self.ScrollView.frame.size.height)];
+}
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    [self.ScrollView setContentSize:CGSizeMake(self.view.frame.size.width, 550)];
+}
+
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
+    [super willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    [self.ScrollView setContentSize:CGSizeMake(self.view.frame.size.width, 550)];
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.ScrollView setContentSize:CGSizeMake(320, 500)];
-    self.ScrollView.scrollEnabled = YES;
-    self.ScrollView.showsHorizontalScrollIndicator = YES;
-    self.ScrollView.showsVerticalScrollIndicator = YES;
-    self.ScrollView.pagingEnabled = YES;
+ 
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"image" ofType:@"png"];
     NSURL *fileNameAndPath = [NSURL fileURLWithPath:filePath];
