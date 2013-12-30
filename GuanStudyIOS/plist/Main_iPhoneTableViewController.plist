@@ -26,6 +26,23 @@
 		</array>
 	</dict>
 	<dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>width</key>
+				<integer>320</integer>
+				<key>height</key>
+				<integer>213</integer>
+				<key>uuid</key>
+				<string>MapKit_ios6</string>
+				<key>image</key>
+				<string>MapKit_ios6.png</string>
+				<key>title</key>
+				<string>MapKit_ios6</string>
+				<key>introduction</key>
+				<string>MapKit_ios6Introduction</string>
+			</dict>
+		</array>
 		<key>name</key>
 		<string>iOS6_by_Tutorials.pdf</string>
 		<key>type</key>

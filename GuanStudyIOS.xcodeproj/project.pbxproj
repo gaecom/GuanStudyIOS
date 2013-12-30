@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D313A96B1871645200E19B5B /* GuanStudyIOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D313A96A1871645200E19B5B /* GuanStudyIOS-Info.plist */; };
+		D313A96F1871662300E19B5B /* MapKit_ios6.png in Resources */ = {isa = PBXBuildFile; fileRef = D313A96E1871662300E19B5B /* MapKit_ios6.png */; };
+		D313A9731871667B00E19B5B /* MapKit_ios6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D313A9711871667B00E19B5B /* MapKit_ios6ViewController.m */; };
+		D313A9741871667B00E19B5B /* MapKit_ios6ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D313A9721871667B00E19B5B /* MapKit_ios6ViewController.xib */; };
+		D313A97618716BB800E19B5B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D313A97518716BB800E19B5B /* MapKit.framework */; };
+		D313A97918716D7300E19B5B /* London.geojson in Resources */ = {isa = PBXBuildFile; fileRef = D313A97718716D7300E19B5B /* London.geojson */; };
+		D313A97A18716D7300E19B5B /* victoria_line.json in Resources */ = {isa = PBXBuildFile; fileRef = D313A97818716D7300E19B5B /* victoria_line.json */; };
+		D313A97D1871764500E19B5B /* RWStation.m in Sources */ = {isa = PBXBuildFile; fileRef = D313A97C1871764500E19B5B /* RWStation.m */; };
 		D32F78E0186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */; };
 		D32F78E6186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */; };
 		D32F78F5186AA9F2006CB53F /* FlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78F2186AA9F2006CB53F /* FlowViewCell.m */; };
@@ -51,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D313A96A1871645200E19B5B /* GuanStudyIOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GuanStudyIOS-Info.plist"; sourceTree = "<group>"; };
+		D313A96E1871662300E19B5B /* MapKit_ios6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapKit_ios6.png; sourceTree = "<group>"; };
+		D313A9701871667B00E19B5B /* MapKit_ios6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKit_ios6ViewController.h; sourceTree = "<group>"; };
+		D313A9711871667B00E19B5B /* MapKit_ios6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKit_ios6ViewController.m; sourceTree = "<group>"; };
+		D313A9721871667B00E19B5B /* MapKit_ios6ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapKit_ios6ViewController.xib; sourceTree = "<group>"; };
+		D313A97518716BB800E19B5B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D313A97718716D7300E19B5B /* London.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = London.geojson; sourceTree = "<group>"; };
+		D313A97818716D7300E19B5B /* victoria_line.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = victoria_line.json; sourceTree = "<group>"; };
+		D313A97B1871764500E19B5B /* RWStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStation.h; sourceTree = "<group>"; };
+		D313A97C1871764500E19B5B /* RWStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStation.m; sourceTree = "<group>"; };
 		D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iOS5_by_Tutorials.storyboard; sourceTree = "<group>"; };
 		D32F78E4186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS5_by_TutorialsTableViewController.h; sourceTree = "<group>"; };
 		D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS5_by_TutorialsTableViewController.m; sourceTree = "<group>"; };
@@ -101,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D313A97618716BB800E19B5B /* MapKit.framework in Frameworks */,
 				D34B9156186AE051006EE460 /* CoreImage.framework in Frameworks */,
 				D37E4783186978EF008D7FDC /* CoreGraphics.framework in Frameworks */,
 				D37E4785186978EF008D7FDC /* UIKit.framework in Frameworks */,
@@ -121,6 +140,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D313A96C1871661200E19B5B /* IOS6_by_Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				D313A96D1871661200E19B5B /* MapKit_ios6 */,
+			);
+			path = IOS6_by_Tutorials;
+			sourceTree = "<group>";
+		};
+		D313A96D1871661200E19B5B /* MapKit_ios6 */ = {
+			isa = PBXGroup;
+			children = (
+				D313A97718716D7300E19B5B /* London.geojson */,
+				D313A97818716D7300E19B5B /* victoria_line.json */,
+				D313A96E1871662300E19B5B /* MapKit_ios6.png */,
+				D313A9701871667B00E19B5B /* MapKit_ios6ViewController.h */,
+				D313A9711871667B00E19B5B /* MapKit_ios6ViewController.m */,
+				D313A9721871667B00E19B5B /* MapKit_ios6ViewController.xib */,
+				D313A97B1871764500E19B5B /* RWStation.h */,
+				D313A97C1871764500E19B5B /* RWStation.m */,
+			);
+			path = MapKit_ios6;
+			sourceTree = "<group>";
+		};
 		D32F78D9186A7D54006CB53F /* pdfStudy */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +216,7 @@
 		D32F78F7186AAA81006CB53F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				D3396807186D4225003BAF9C /* IOS6_by_Tutorials */,
+				D313A96C1871661200E19B5B /* IOS6_by_Tutorials */,
 				D32F78F8186AAA81006CB53F /* IOS5_by_Tutorials */,
 			);
 			path = Demo;
@@ -205,21 +247,6 @@
 			path = "Core Image";
 			sourceTree = "<group>";
 		};
-		D3396807186D4225003BAF9C /* IOS6_by_Tutorials */ = {
-			isa = PBXGroup;
-			children = (
-				D3396808186D4225003BAF9C /* Core ImageIOS6 */,
-			);
-			path = IOS6_by_Tutorials;
-			sourceTree = "<group>";
-		};
-		D3396808186D4225003BAF9C /* Core ImageIOS6 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Core ImageIOS6";
-			sourceTree = "<group>";
-		};
 		D37E4774186978EF008D7FDC = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +270,7 @@
 		D37E477F186978EF008D7FDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D313A97518716BB800E19B5B /* MapKit.framework */,
 				D34B9155186AE051006EE460 /* CoreImage.framework */,
 				D37E4780186978EF008D7FDC /* Foundation.framework */,
 				D37E4782186978EF008D7FDC /* CoreGraphics.framework */,
@@ -273,6 +301,7 @@
 		D37E4787186978EF008D7FDC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D313A96A1871645200E19B5B /* GuanStudyIOS-Info.plist */,
 				D32F7901186AAB79006CB53F /* main.m */,
 				D32F7900186AAB51006CB53F /* GuanStudyIOS-Prefix.pch */,
 				D37E4789186978EF008D7FDC /* InfoPlist.strings */,
@@ -393,6 +422,11 @@
 				D37E479C186978EF008D7FDC /* Images.xcassets in Resources */,
 				D37E4794186978EF008D7FDC /* Main_iPhone.storyboard in Resources */,
 				D37E478B186978EF008D7FDC /* InfoPlist.strings in Resources */,
+				D313A97918716D7300E19B5B /* London.geojson in Resources */,
+				D313A9741871667B00E19B5B /* MapKit_ios6ViewController.xib in Resources */,
+				D313A97A18716D7300E19B5B /* victoria_line.json in Resources */,
+				D313A96B1871645200E19B5B /* GuanStudyIOS-Info.plist in Resources */,
+				D313A96F1871662300E19B5B /* MapKit_ios6.png in Resources */,
 				D35149E4186C1220008A63E7 /* sampleMaskPng.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +447,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32F78E6186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m in Sources */,
+				D313A97D1871764500E19B5B /* RWStation.m in Sources */,
+				D313A9731871667B00E19B5B /* MapKit_ios6ViewController.m in Sources */,
 				D350D434186BCCF3009B5B87 /* BaseViewController.m in Sources */,
 				D34B9159186AE21B006EE460 /* UIImage+Resize.m in Sources */,
 				D37E4791186978EF008D7FDC /* AppDelegate.m in Sources */,

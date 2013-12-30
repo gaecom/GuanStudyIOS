@@ -84,7 +84,6 @@
         <!--Flow View Controller-->
         <scene sceneID="m3C-P8-wEO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cr2-CV-UvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Esj-CS-lWW" customClass="FlowViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="356" sectionHeaderHeight="22" sectionFooterHeight="22" id="RJK-CF-inA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -133,6 +132,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="bDG-Lh-hXh"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cr2-CV-UvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="807" y="88"/>
         </scene>
