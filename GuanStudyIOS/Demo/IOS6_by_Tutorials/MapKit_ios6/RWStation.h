@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface RWStation : NSObject
+@interface RWStation : NSObject<MKAnnotation>
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;

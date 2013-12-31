@@ -46,6 +46,7 @@
 		D37E47AF186978EF008D7FDC /* GuanStudyIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37E47AE186978EF008D7FDC /* GuanStudyIOSTests.m */; };
 		D37E47BD18697AED008D7FDC /* Main_iPhoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37E47BC18697AED008D7FDC /* Main_iPhoneTableViewController.m */; };
 		D37E47C218697C07008D7FDC /* Main_iPhoneTableViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = D37E47C118697C07008D7FDC /* Main_iPhoneTableViewController.plist */; };
+		D38603071872A877009C0103 /* RWRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D38603061872A877009C0103 /* RWRoute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		D37E47BB18697AED008D7FDC /* Main_iPhoneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_iPhoneTableViewController.h; sourceTree = "<group>"; };
 		D37E47BC18697AED008D7FDC /* Main_iPhoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_iPhoneTableViewController.m; sourceTree = "<group>"; };
 		D37E47C118697C07008D7FDC /* Main_iPhoneTableViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main_iPhoneTableViewController.plist; sourceTree = "<group>"; };
+		D38603051872A877009C0103 /* RWRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRoute.h; sourceTree = "<group>"; };
+		D38603061872A877009C0103 /* RWRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRoute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 				D313A9721871667B00E19B5B /* MapKit_ios6ViewController.xib */,
 				D313A97B1871764500E19B5B /* RWStation.h */,
 				D313A97C1871764500E19B5B /* RWStation.m */,
+				D38603051872A877009C0103 /* RWRoute.h */,
+				D38603061872A877009C0103 /* RWRoute.m */,
 			);
 			path = MapKit_ios6;
 			sourceTree = "<group>";
@@ -446,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38603071872A877009C0103 /* RWRoute.m in Sources */,
 				D32F78E6186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m in Sources */,
 				D313A97D1871764500E19B5B /* RWStation.m in Sources */,
 				D313A9731871667B00E19B5B /* MapKit_ios6ViewController.m in Sources */,

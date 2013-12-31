@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MapKit_ios6ViewController : UIViewController
+@interface MapKit_ios6ViewController :BaseViewController
 
 @end

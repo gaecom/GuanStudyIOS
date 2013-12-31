@@ -82,6 +82,8 @@
     BOOL isAnimate = YES;
     if ([demoUUID isEqualToString:@"Core Image"]) {
         VC = [[CoreImage_ios5TutorialsViewController alloc]initWithNibName:@"CoreImage_ios5TutorialsViewController" bundle:nil];
+    }else if([demoUUID isEqualToString:@"MapKit_ios6"]){
+        VC = [[MapKit_ios6ViewController alloc]initWithNibName:@"MapKit_ios6ViewController" bundle:nil];
     }
     // 判断iOS版本
     if (VC) {

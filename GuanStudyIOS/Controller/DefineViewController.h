@@ -7,3 +7,4 @@
 //
 
 #import "CoreImage_ios5TutorialsViewController.h"
+#import "MapKit_ios6ViewController.h"
