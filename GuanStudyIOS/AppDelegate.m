@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import <MapKit/MapKit.h>
+#import "MapKit_ios6ViewController.h"
+
+@interface AppDelegate ()
+@property (nonatomic, weak) IBOutlet MapKit_ios6ViewController *mapViewController;
+@end
 
 @implementation AppDelegate
 
@@ -14,6 +20,29 @@
 {
     // Override point for customization after application launch.
     return YES;
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    // 1
+    if ([MKDirectionsRequest isDirectionsRequestURL:url]) {
+        // 2
+        MKDirectionsRequest *request = [[MKDirectionsRequest alloc] initWithContentsOfURL:url];
+        MKMapItem *startItem = request.source;
+        MKMapItem *endItem = request.destination;
+        
+        // 3
+        if ([startItem isCurrentLocation]) {
+            [self.mapViewController routeFromCurrentLocationTo:endItem.placemark.location.coordinate];//从用户当前位置，到一个指定的地方
+        } else if ([endItem isCurrentLocation]) {
+            [self.mapViewController routeToCurrentLocationFrom:startItem.placemark.location.coordinate];//从一个指定的地方,到用户当前的位置
+        } else {
+            [self.mapViewController routeFrom:startItem.placemark.location.coordinate to:endItem.placemark.location.coordinate];//起点终点都是指定的地方
+        }
+        
+        // 4
+        return YES;
+    }
+    return NO;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

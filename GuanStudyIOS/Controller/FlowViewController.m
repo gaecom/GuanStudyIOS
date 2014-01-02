@@ -78,26 +78,31 @@
 
 #pragma mark - FlowViewCellDelegate
 - (void)flowViewCell:(FlowViewCell *)cell startDemo:(NSString *)demoUUID Introduction:(NSString *)introduction{
-    BaseViewController *VC = nil;
+    BaseViewController *Xib_VC = nil;
     BOOL isAnimate = YES;
     if ([demoUUID isEqualToString:@"Core Image"]) {
-        VC = [[CoreImage_ios5TutorialsViewController alloc]initWithNibName:@"CoreImage_ios5TutorialsViewController" bundle:nil];
+        Xib_VC = [[CoreImage_ios5TutorialsViewController alloc]initWithNibName:@"CoreImage_ios5TutorialsViewController" bundle:nil];
     }else if([demoUUID isEqualToString:@"MapKit_ios6"]){
-        VC = [[MapKit_ios6ViewController alloc]initWithNibName:@"MapKit_ios6ViewController" bundle:nil];
+        Xib_VC = [[MapKit_ios6ViewController alloc]initWithNibName:@"MapKit_ios6ViewController" bundle:nil];
     }
-    // 判断iOS版本
-    if (VC) {
+   
+    if (Xib_VC) {
         if ([[[[UIDevice currentDevice] systemVersion] substringToIndex:1] intValue] >= 6) {
-            VC.title = demoUUID;
-            VC.Introduction = introduction;
-            [self.navigationController pushViewController:VC animated:isAnimate];
-        } else {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"这是iOS6的新特性" message:@"请升级到iOS6" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
+            Xib_VC.title = demoUUID;
+            Xib_VC.Introduction = introduction;
+            [self.navigationController pushViewController:Xib_VC animated:isAnimate];
         }
         return;
     }
    
+    UIStoryboard *storyboard = nil;
+    if ([demoUUID isEqualToString:@"Theme_ios6"]) {
+        storyboard = [UIStoryboard storyboardWithName:@"Theme_ios6" bundle:nil];
+    }
+    if (storyboard) {
+        [self.navigationController pushViewController:storyboard.instantiateInitialViewController animated:YES];
+        
+    }
 }
 
 

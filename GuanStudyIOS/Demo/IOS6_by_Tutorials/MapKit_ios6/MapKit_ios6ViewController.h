@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface MapKit_ios6ViewController :BaseViewController
+
+- (void)routeFrom:(CLLocationCoordinate2D)from to:(CLLocationCoordinate2D)to;
+- (void)routeFromCurrentLocationTo:(CLLocationCoordinate2D)to;
+- (void)routeToCurrentLocationFrom:(CLLocationCoordinate2D)from;
 
 @end

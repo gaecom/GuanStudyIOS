@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30CB86A187566F900AA130B /* Theme_ios6.png in Resources */ = {isa = PBXBuildFile; fileRef = D30CB869187566F900AA130B /* Theme_ios6.png */; };
+		D30CB86C1875670E00AA130B /* Theme_ios6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30CB86B1875670E00AA130B /* Theme_ios6.storyboard */; };
+		D30CB872187569B800AA130B /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30CB871187569B800AA130B /* ThemeViewController.m */; };
 		D313A96B1871645200E19B5B /* GuanStudyIOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D313A96A1871645200E19B5B /* GuanStudyIOS-Info.plist */; };
 		D313A96F1871662300E19B5B /* MapKit_ios6.png in Resources */ = {isa = PBXBuildFile; fileRef = D313A96E1871662300E19B5B /* MapKit_ios6.png */; };
 		D313A9731871667B00E19B5B /* MapKit_ios6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D313A9711871667B00E19B5B /* MapKit_ios6ViewController.m */; };
@@ -15,8 +18,6 @@
 		D313A97918716D7300E19B5B /* London.geojson in Resources */ = {isa = PBXBuildFile; fileRef = D313A97718716D7300E19B5B /* London.geojson */; };
 		D313A97A18716D7300E19B5B /* victoria_line.json in Resources */ = {isa = PBXBuildFile; fileRef = D313A97818716D7300E19B5B /* victoria_line.json */; };
 		D313A97D1871764500E19B5B /* RWStation.m in Sources */ = {isa = PBXBuildFile; fileRef = D313A97C1871764500E19B5B /* RWStation.m */; };
-		D32F78E0186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */; };
-		D32F78E6186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */; };
 		D32F78F5186AA9F2006CB53F /* FlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78F2186AA9F2006CB53F /* FlowViewCell.m */; };
 		D32F78F6186AA9F2006CB53F /* FlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F78F4186AA9F2006CB53F /* FlowViewController.m */; };
 		D32F7902186AAB79006CB53F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F7901186AAB79006CB53F /* main.m */; };
@@ -60,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D30CB869187566F900AA130B /* Theme_ios6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Theme_ios6.png; sourceTree = "<group>"; };
+		D30CB86B1875670E00AA130B /* Theme_ios6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Theme_ios6.storyboard; sourceTree = "<group>"; };
+		D30CB870187569B800AA130B /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeViewController.h; sourceTree = "<group>"; };
+		D30CB871187569B800AA130B /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
 		D313A96A1871645200E19B5B /* GuanStudyIOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GuanStudyIOS-Info.plist"; sourceTree = "<group>"; };
 		D313A96E1871662300E19B5B /* MapKit_ios6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapKit_ios6.png; sourceTree = "<group>"; };
 		D313A9701871667B00E19B5B /* MapKit_ios6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKit_ios6ViewController.h; sourceTree = "<group>"; };
@@ -70,9 +75,6 @@
 		D313A97818716D7300E19B5B /* victoria_line.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = victoria_line.json; sourceTree = "<group>"; };
 		D313A97B1871764500E19B5B /* RWStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStation.h; sourceTree = "<group>"; };
 		D313A97C1871764500E19B5B /* RWStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStation.m; sourceTree = "<group>"; };
-		D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iOS5_by_Tutorials.storyboard; sourceTree = "<group>"; };
-		D32F78E4186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS5_by_TutorialsTableViewController.h; sourceTree = "<group>"; };
-		D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS5_by_TutorialsTableViewController.m; sourceTree = "<group>"; };
 		D32F78F0186AA9F2006CB53F /* DefineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineViewController.h; sourceTree = "<group>"; };
 		D32F78F1186AA9F2006CB53F /* FlowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowViewCell.h; sourceTree = "<group>"; };
 		D32F78F2186AA9F2006CB53F /* FlowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowViewCell.m; sourceTree = "<group>"; };
@@ -143,9 +145,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D30CB8681875639E00AA130B /* Theme_ios6 */ = {
+			isa = PBXGroup;
+			children = (
+				D30CB869187566F900AA130B /* Theme_ios6.png */,
+				D30CB86B1875670E00AA130B /* Theme_ios6.storyboard */,
+				D30CB870187569B800AA130B /* ThemeViewController.h */,
+				D30CB871187569B800AA130B /* ThemeViewController.m */,
+			);
+			path = Theme_ios6;
+			sourceTree = "<group>";
+		};
 		D313A96C1871661200E19B5B /* IOS6_by_Tutorials */ = {
 			isa = PBXGroup;
 			children = (
+				D30CB8681875639E00AA130B /* Theme_ios6 */,
 				D313A96D1871661200E19B5B /* MapKit_ios6 */,
 			);
 			path = IOS6_by_Tutorials;
@@ -166,40 +180,6 @@
 				D38603061872A877009C0103 /* RWRoute.m */,
 			);
 			path = MapKit_ios6;
-			sourceTree = "<group>";
-		};
-		D32F78D9186A7D54006CB53F /* pdfStudy */ = {
-			isa = PBXGroup;
-			children = (
-				D32F78DA186A7D54006CB53F /* iOS5_by_Tutorials_Storyboard */,
-				D32F78DB186A7D54006CB53F /* iOS6_by_Tutorials_Storyboard */,
-				D32F78DC186A7D54006CB53F /* iOS7_by_Tutorials_Storyboard */,
-			);
-			path = pdfStudy;
-			sourceTree = "<group>";
-		};
-		D32F78DA186A7D54006CB53F /* iOS5_by_Tutorials_Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				D32F78DF186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard */,
-				D32F78E4186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.h */,
-				D32F78E5186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m */,
-			);
-			path = iOS5_by_Tutorials_Storyboard;
-			sourceTree = "<group>";
-		};
-		D32F78DB186A7D54006CB53F /* iOS6_by_Tutorials_Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iOS6_by_Tutorials_Storyboard;
-			sourceTree = "<group>";
-		};
-		D32F78DC186A7D54006CB53F /* iOS7_by_Tutorials_Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iOS7_by_Tutorials_Storyboard;
 			sourceTree = "<group>";
 		};
 		D32F78EF186AA9F2006CB53F /* Controller */ = {
@@ -256,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				D37E4786186978EF008D7FDC /* GuanStudyIOS */,
-				D32F78D9186A7D54006CB53F /* pdfStudy */,
 				D37E47A8186978EF008D7FDC /* GuanStudyIOSTests */,
 				D37E477F186978EF008D7FDC /* Frameworks */,
 				D37E477E186978EF008D7FDC /* Products */,
@@ -387,6 +366,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "城云 官";
 				TargetAttributes = {
+					D37E477C186978EF008D7FDC = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					D37E47A0186978EF008D7FDC = {
 						TestTargetID = D37E477C186978EF008D7FDC;
 					};
@@ -417,7 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37E47C218697C07008D7FDC /* Main_iPhoneTableViewController.plist in Resources */,
-				D32F78E0186A7E0E006CB53F /* iOS5_by_Tutorials.storyboard in Resources */,
+				D30CB86A187566F900AA130B /* Theme_ios6.png in Resources */,
 				D32F790A186AB19E006CB53F /* bryce.png in Resources */,
 				D3396806186D29E8003BAF9C /* CoreImageIntroduction.html in Resources */,
 				D35149E2186C0BA7008A63E7 /* Core Image.html in Resources */,
@@ -427,6 +413,7 @@
 				D37E479C186978EF008D7FDC /* Images.xcassets in Resources */,
 				D37E4794186978EF008D7FDC /* Main_iPhone.storyboard in Resources */,
 				D37E478B186978EF008D7FDC /* InfoPlist.strings in Resources */,
+				D30CB86C1875670E00AA130B /* Theme_ios6.storyboard in Resources */,
 				D313A97918716D7300E19B5B /* London.geojson in Resources */,
 				D313A9741871667B00E19B5B /* MapKit_ios6ViewController.xib in Resources */,
 				D313A97A18716D7300E19B5B /* victoria_line.json in Resources */,
@@ -452,7 +439,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38603071872A877009C0103 /* RWRoute.m in Sources */,
-				D32F78E6186A7F7C006CB53F /* iOS5_by_TutorialsTableViewController.m in Sources */,
 				D313A97D1871764500E19B5B /* RWStation.m in Sources */,
 				D313A9731871667B00E19B5B /* MapKit_ios6ViewController.m in Sources */,
 				D350D434186BCCF3009B5B87 /* BaseViewController.m in Sources */,
@@ -464,6 +450,7 @@
 				D350D431186BCAA6009B5B87 /* DemoCodeViewController.m in Sources */,
 				D37E47BD18697AED008D7FDC /* Main_iPhoneTableViewController.m in Sources */,
 				D32F7906186AAF43006CB53F /* CoreImage_ios5TutorialsViewController.m in Sources */,
+				D30CB872187569B800AA130B /* ThemeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

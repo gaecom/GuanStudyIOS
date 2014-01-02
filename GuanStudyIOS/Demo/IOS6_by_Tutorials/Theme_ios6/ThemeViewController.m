@@ -1,18 +1,18 @@
 //
-//  iOS5_by_TutorialsTableViewController.m
+//  ThemeViewController.m
 //  GuanStudyIOS
 //
-//  Created by macmini on 13-12-25.
-//  Copyright (c) 2013 城云 官. All rights reserved.
+//  Created by macmini on 14-01-02.
+//  Copyright (c) 2014 城云 官. All rights reserved.
 //
 
-#import "iOS5_by_TutorialsTableViewController.h"
+#import "ThemeViewController.h"
 
-@interface iOS5_by_TutorialsTableViewController ()
+@interface ThemeViewController ()
 
 @end
 
-@implementation iOS5_by_TutorialsTableViewController
+@implementation ThemeViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -44,14 +44,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
 }

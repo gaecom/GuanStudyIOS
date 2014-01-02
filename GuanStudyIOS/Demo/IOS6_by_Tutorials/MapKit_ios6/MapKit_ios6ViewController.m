@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
     switch (mapMode) {
         case RWMapModeNormal: {
             self.title = @"Maps";
-            self.navigationItem.leftBarButtonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+//            self.navigationItem.leftBarButtonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
             self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Show in Maps" style:UIBarButtonItemStyleBordered target:self action:@selector(showInMaps:)];
             
             if (_currentRoute) {
@@ -95,6 +95,16 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
         }
             break;
     }
+}
+
+-(void)routeInMaps:(id)sender{
+    NSArray *mapItems = @[[_currentRoute.fromStation mapItem],[_currentRoute.toStation mapItem]];
+    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving};
+    [MKMapItem openMapsWithItems:mapItems launchOptions:launchOptions];
+}
+
+-(void)clearDirections:(id)sender{
+    self.mapMode = RWMapModeNormal;
 }
 
 -(void)showInMaps:(id)sender{
@@ -196,7 +206,7 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
     [self loadData];
     self.mapMode = RWMapModeNormal;
     
@@ -205,35 +215,41 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
     MKCoordinateRegion regionToDisplay = MKCoordinateRegionMake(center, span);
     [self.mapView setRegion:regionToDisplay animated:NO];
     
-    UILongPressGestureRecognizer *longPressRecognizer = [[UILongPressGestureRecognizer alloc]
-                                                         initWithTarget:self action:@selector(handleLongPress:)];
-    [self.mapView addGestureRecognizer:longPressRecognizer];
+    UILongPressGestureRecognizer *longPressRecogniser = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+    longPressRecogniser.minimumPressDuration = 1.0;
+    [self.mapView addGestureRecognizer:longPressRecogniser];
 }
 
 - (void)performAfterFindingLocation:(RWLocationCallback)callback{
     if (self.mapView.userLocation != nil) {
         if (callback) {
             callback(self.mapView.userLocation.coordinate);
-        }else{
-            _foundLocationCallback = [callback copy];
+            
         }
+    } else {
+        _foundLocationCallback = [callback copy];
     }
 }
 
--(void)handleLongPress:(UIGestureRecognizer *)recognizer{
-    if (recognizer.state == UIGestureRecognizerStateBegan) {
+-(void)handleLongPress:(UIGestureRecognizer *)recogniser{
+    // 1
+    if (recogniser.state == UIGestureRecognizerStateBegan) {
+        // 2
         if (_droppedPin) {
             [self.mapView removeAnnotation:_droppedPin];
             _droppedPin = nil;
         }
         
-        CGPoint touchPoint = [recognizer locationInView:self.mapView];
+        // 3
+        CGPoint touchPoint = [recogniser locationInView:self.mapView];
         CLLocationCoordinate2D touchMapCoordinate = [self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];
         
-        _droppedPin = [[RWStation alloc]init];
+        // 4
+        _droppedPin = [[RWStation alloc] init];
         _droppedPin.coordinate = touchMapCoordinate;
         _droppedPin.title = @"Dropped Pin";
         
+        // 5
         [self.mapView addAnnotation:_droppedPin];
     }
 }
@@ -250,7 +266,6 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
             nearestDistance = thisDistance;
             nearestStation = station;
         }
-        
     }];
     //返回最短距离
     return nearestStation;
@@ -263,21 +278,26 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
 }
 
 -(void)loadData{
+    // 1
     NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"victoria_line" ofType:@"json"]];
     NSArray *stationData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     NSUInteger stationCount = stationData.count;
     
+    // 2
     NSInteger i = 0;
-    CLLocationCoordinate2D *polylineCoords = malloc(sizeof(CLLocationCoordinate2D)* stationCount);
-    _stations = [[NSMutableArray alloc]initWithCapacity:stationCount];
+    CLLocationCoordinate2D *polylineCoords = malloc(sizeof(CLLocationCoordinate2D) * stationCount);
+    _stations = [[NSMutableArray alloc] initWithCapacity:stationCount];
     
+    // 3
     for (NSDictionary *stationDictionary in stationData) {
+        // 4
         CLLocationDegrees latitude = [[stationDictionary objectForKey:@"latitude"] doubleValue];
-        CLLocationDegrees longitude = [[stationDictionary objectForKey:@"longitude"]doubleValue];
+        CLLocationDegrees longitude = [[stationDictionary objectForKey:@"longitude"] doubleValue];
         CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(latitude, longitude);
         polylineCoords[i] = coordinate;
         
-        RWStation *station = [[RWStation alloc]init];
+        // 5
+        RWStation *station = [[RWStation alloc] init];
         station.title = [stationDictionary objectForKey:@"name"];
         station.coordinate = coordinate;
         [_stations addObject:station];
@@ -285,8 +305,10 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
         i++;
     }
     
+    // 6
     _mapPolyline = [MKPolyline polylineWithCoordinates:polylineCoords count:stationCount];
-  
+    
+    // 7
     free(polylineCoords);
 }
 
@@ -311,6 +333,8 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
         }
         if (self.mapMode == RWMapModeNormal) {
             view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        }else{
+            view.rightCalloutAccessoryView = nil;
         }
         return view;//返回大头针
     }
@@ -359,7 +383,19 @@ typedef NS_ENUM(NSInteger, RWMapMode) {
     [sheet showInView:self.view];
 }
 -(void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
-
+    if (buttonIndex != actionSheet.cancelButtonIndex) {
+        if (buttonIndex == 0) {
+            MKMapItem *mapItem = [_selectedStation mapItem];
+            NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking};
+            [mapItem openInMapsWithLaunchOptions:launchOptions];
+        }else if (buttonIndex == 1){
+            [self routeFromCurrentLocationTo:_selectedStation.coordinate];//当前站到选中站的路线
+        }else if (buttonIndex == 2){
+            [self routeFrom:_droppedPin.coordinate to:_selectedStation.coordinate];
+        }
+    }
+    
+    _selectedStation = nil;
 }
 
 @end
